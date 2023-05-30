@@ -19,7 +19,17 @@ namespace Tests_Planetas
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            labRezultats.Text = Form2.punkti + " balles";
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labRezultats_Click(object sender, EventArgs e)
+        {
+            labRezultats.Text = Form2.punkti + " balles";
         }
     }
 }

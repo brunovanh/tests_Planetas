@@ -24,7 +24,9 @@ namespace Tests_Planetas
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form2 jautajumi = new Form2();
+            jautajumi.Show();
         }
     }
 }

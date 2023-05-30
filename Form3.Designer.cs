@@ -30,7 +30,7 @@ namespace Tests_Planetas
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.labRezultats = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -45,16 +45,19 @@ namespace Tests_Planetas
             this.label1.TabIndex = 2;
             this.label1.Text = "TESTA REZULTĀTS";
             // 
-            // button2
+            // labRezultats
             // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.button2.Location = new System.Drawing.Point(257, 290);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 69);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "balles";
-            this.button2.UseVisualStyleBackColor = false;
+            this.labRezultats.AutoSize = true;
+            this.labRezultats.BackColor = System.Drawing.Color.Lime;
+            this.labRezultats.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.labRezultats.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labRezultats.Location = new System.Drawing.Point(301, 290);
+            this.labRezultats.Name = "labRezultats";
+            this.labRezultats.Size = new System.Drawing.Size(100, 37);
+            this.labRezultats.TabIndex = 3;
+            this.labRezultats.Text = "balles";
+            this.labRezultats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labRezultats.Click += new System.EventHandler(this.labRezultats_Click);
             // 
             // Form3
             // 
@@ -62,7 +65,7 @@ namespace Tests_Planetas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tests_Planetas.Properties.Resources.Saules_sistemas_planeetas__1_;
             this.ClientSize = new System.Drawing.Size(687, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.labRezultats);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "tests";
@@ -75,6 +78,6 @@ namespace Tests_Planetas
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labRezultats;
     }
 }
